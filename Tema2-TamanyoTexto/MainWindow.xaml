@@ -1,0 +1,72 @@
+﻿<Window x:Class="Tema2_TamanyoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_TamanyoTexto"
+        mc:Ignorable="d"
+        Title="Tamaño texto" Height="450" Width="800">
+    <Grid>
+        <RadioButton
+        x:Name="pequeñoRadioButton"
+        GroupName="AumentaTexto"
+        Content="Pequeño"
+        Tag="36"
+        HorizontalAlignment="Left"
+        Margin="79,341,0,0"
+        VerticalAlignment="Top"
+        Width="87"
+        Height="16" 
+        Checked="PequeñoRadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.6" ScaleY="1.6" />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton
+            x:Name="medianoRadioButton"
+            GroupName="AumentaTexto"
+            Content="Mediano"
+            Tag="48"
+            HorizontalAlignment="Left"
+            Margin="318,341,0,0"
+            VerticalAlignment="Top"
+            Width="87"
+            Height="16" Checked="MedianoRadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.6" ScaleY="1.6" />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton
+            x:Name="grandeRadioButton"
+            GroupName="AumentaTexto"
+            Content="Grande"
+            Tag="72"
+            HorizontalAlignment="Left"
+            Margin="571,341,0,0"
+            VerticalAlignment="Top"
+            Width="87"
+            Height="16" Checked="GrandeRadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.6" ScaleY="1.6" />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <TextBlock 
+            x:Name="MuestraTextBlock"
+            HorizontalAlignment="Left" 
+            Margin="187,77,0,0" 
+            TextWrapping="Wrap" 
+            Text="Texto de muestra"
+            TextAlignment="Center"
+            VerticalAlignment="Top" 
+            Width="401" 
+            Height="190"
+            FontSize="16"/>
+
+    </Grid>
+</Window>
